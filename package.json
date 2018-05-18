@@ -1,11 +1,8 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "Blog",
+  "description": "My personal blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
+  "author": "Andrew Jones <ximenean@hotmail.com>",
   "dependencies": {
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.39",
@@ -34,7 +31,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/ximenean/blog",
   "keywords": [
     "gatsby"
   ],
@@ -42,7 +39,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/ximenean/blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
