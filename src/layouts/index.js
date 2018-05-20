@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
+import Hero from '../components/hero.jpg'
 
 class Template extends React.Component {
   render() {
@@ -18,8 +19,11 @@ class Template extends React.Component {
         <h1
           style={{
             ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            backgroundImage: `url(${Hero})`,
+            color: 'white',
+            letterSpacing: '0.2em',
             marginTop: 0,
+            padding: '2.5em',
           }}
         >
           <Link
@@ -38,9 +42,12 @@ class Template extends React.Component {
       header = (
         <h3
           style={{
+            backgroundImage: `url(${Hero})`,
             fontFamily: 'Montserrat, sans-serif',
+            color: 'white',
+            letterSpacing: '0.2em',
             marginTop: 0,
-            marginBottom: rhythm(-1),
+            padding: '2.5em',
           }}
         >
           <Link
@@ -59,14 +66,22 @@ class Template extends React.Component {
     return (
       <div
         style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          backgroundColor: 'rgb(245,245,245)',
         }}
       >
         {header}
-        {children()}
+        <div
+          style={{
+            backgroundColor: 'white',
+            boxShadow: '5px 5px 10px 0px rgba(204,202,204)',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+          {children()}
+        </div>
       </div>
     )
   }
